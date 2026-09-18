@@ -1,0 +1,124 @@
+Description
+de l’ensemble de données Ce jeu de données simule un environnement de vente au détail avec un million de lignes et 100+ colonnes, couvrant les informations clients, les données transactionnelles, les détails des produits, les informations promotionnelles et les indicateurs de comportement client. Il inclut des données pour prédire les ventes totales (régression) et le churn de clients (classification).
+
+Descriptions détaillées des colonnes Informations
+clients :
+
+customer_id : Identifiant unique pour chaque client.
+Âge : Âge du client.
+genre : Sexe du client (par exemple, homme, femme, autre).
+income_bracket : Tranche de revenus du client (par exemple, faible, moyen, élevé).
+loyalty_program : Savoir si le client fait partie d’un programme de fidélité (Oui/Non).
+membership_years : Depuis combien d’années le client est membre.
+churneded : Si le client a churné (Oui/Non) - Cible pour la classification.
+marital_status : État civil du client.
+number_of_children : Nombre d’enfants que le client a.
+education_level : Niveau d’éducation du client (par exemple, lycée, licence, master).
+Profession : Profession du client.
+Données transactionnelles :
+
+transaction_id : Identifiant unique pour chaque transaction.
+transaction_date : Date de la transaction.
+product_id : Identifiant unique pour chaque produit.
+product_category : catégorie du produit (par exemple, électronique, vêtements, épiceries).
+quantité : Quantité du produit acheté.
+unit_price : Prix par unité du produit.
+discount_applied : Une remise appliquée sur la transaction.
+payment_method : Méthode de paiement utilisée (par exemple, carte de crédit, carte de débit, liquidité).
+store_location : Emplacement du magasin où l’achat a été effectué.
+Indicateurs de comportement client :
+
+avg_purchase_value : Valeur moyenne des achats effectués par le client.
+purchase_frequency : Fréquence des achats (par exemple, quotidiens, hebdomadaires, mensuels, annuels).
+last_purchase_date : Date du dernier achat effectué par le client.
+avg_discount_used : Pourcentage moyen de remise utilisé par le client.
+preferred_store : Magasin le plus fréquemment visité par le client.
+online_purchases : Nombre d’achats en ligne effectués par le client.
+in_store_purchases : Nombre d’achats en magasin effectués par le client.
+avg_items_per_transaction : Nombre moyen d’articles par transaction.
+avg_transaction_value : Valeur moyenne par transaction.
+total_returned_items : Nombre total d’articles retournés par le client.
+total_returned_value : Valeur totale des articles retournés.
+Données de ventes :
+
+total_sales : Volume total des ventes pour chaque client au cours de l’année écoulée - Objectif de régression.
+total_transactions : Nombre total de transactions effectuées par chaque client.
+total_items_purchased : Nombre total d’articles achetés par chaque client.
+total_discounts_received : Total des réductions reçues par chaque client.
+avg_spent_per_category : Montant moyen dépensé par catégorie de produit.
+max_single_purchase_value : Valeur maximale d’un seul achat.
+min_single_purchase_value : Valeur minimale d’un seul achat.
+Informations sur le produit :
+
+product_name : Nom du produit.
+product_brand : La marque du produit.
+product_rating : Évaluation du produit par les clients.
+product_review_count : Nombre d’avis sur le produit.
+product_stock : Disponibilité en stock du produit.
+product_return_rate : Le taux de retour du produit.
+product_size : Taille du produit (si applicable).
+product_weight : Poids du produit (le cas applicable).
+product_color : Couleur du produit (si applicable).
+product_material : Matériau du produit (si applicable).
+product_manufacture_date : Date de fabrication du produit.
+product_expiry_date : Date d’expiration du produit (si applicable).
+product_shelf_life : Durée de conservation du produit (le cas échéant).
+Données promotionnelles :
+
+promotion_id : Identifiant unique pour chaque promotion.
+promotion_type : Type de promotion (par exemple, Achetez un, Obtenez un Gratuit, 20 % de réduction).
+promotion_start_date : Date de début de la promotion.
+promotion_end_date : Date de fin de la promotion.
+promotion_effectiveness : Efficacité de la promotion (par exemple, Élevé, Moyen, Bas).
+promotion_channel : canal par lequel la promotion était annoncée (par exemple, en ligne, en magasin, réseaux sociaux).
+promotion_target_audience : Public cible de la promotion (par exemple, nouveaux clients, clients réguliers).
+Données géographiques :
+
+customer_zip_code : Code postal de la résidence du client.
+customer_city : Ville de la résidence du client.
+customer_state : État de la résidence du client.
+store_zip_code : Code postal du magasin.
+store_city : Ville où se trouve le magasin.
+store_state : Indiquer où se trouve le magasin.
+distance_to_store : Distance entre le domicile du client et le magasin.
+Données saisonnières et temporelles :
+
+holiday_season : Si la transaction a eu lieu pendant une période des fêtes (Oui/Non).
+saison : saison de l’année (par exemple, hiver, printemps, été, automne).
+week-end : Si la transaction a eu lieu un week-end (Oui/Non).
+Données d’interaction client :
+
+customer_support_calls : Nombre d’appels effectués au service client.
+email_subscriptions : Si le client est abonné à des emails marketing (Oui/Non).
+app_usage : Fréquence d’utilisation de l’application mobile du magasin.
+website_visits : Nombre de visites sur le site web du magasin.
+social_media_engagement : Niveau d’engagement avec la boutique sur les réseaux sociaux (par exemple, J’aime, Commentaires, Partages).
+Caractéristiques dérivées (à partir des colonnes existantes) :
+
+days_since_last_purchase : Quelques jours depuis le dernier achat du client.
+avg_purchase_interval : Nombre moyen de jours entre les achats.
+customer_lifetime_value : Valeur à vie prédite du client.
+loyalty_score : Un score représentant la fidélité du client basé sur divers facteurs (par exemple, membership_years, avg_purchase_value).
+churn_risk_score : Un score représentant le risque de désabonnement des clients basé sur la fréquence d’achat, la récentence et les ventes totales.
+Lien des colonnes Informations sur les clients :
+
+Des colonnes comme customer_id, âge, sexe, income_bracket et membership_years sont liées à la démographie et à la fidélité des clients, ce qui peut influencer leur comportement d’achat, leur valeur moyenne et leur probabilité de se désamorcer.
+Données transactionnelles :
+
+transaction_id est liée à customer_id, fournissant des informations sur les habitudes d’achat de chaque client au fil du temps.
+product_id, product_category, quantité, unit_price et discount_applied sont liés aux détails transactionnels, influençant total_sales et avg_purchase_value.
+Indicateurs de comportement client :
+
+Des indicateurs tels que avg_purchase_value, purchase_frequency et last_purchase_date sont dérivés de données transactionnelles et fournissent des informations sur le comportement et la fidélité des clients.
+Données de ventes :
+
+Des colonnes comme total_sales, total_transactions et total_items_purchased résument les habitudes globales de dépenses et d’achat de chaque client, directement liées aux données customer_id et transactionnelles.
+Informations sur le produit :
+
+Des détails tels que product_name, product_brand, product_rating et product_review_count sont liés à product_id, fournissant des informations sur la performance du produit et les préférences des clients.
+Données promotionnelles :
+
+Les détails promotionnels (promotion_id, promotion_type, promotion_start_date et promotion_end_date) sont liés à transaction_id, influençant le comportement d’achat pendant les périodes promotionnelles.
+Données géographiques :
+
+Des détails géographiques comme customer_zip_code, customer_city et customer_state sont liés à store_zip_code, store_city et store_state, fournissant des informations sur l’impact de la localisation sur le comportement d’achat et la performance du magasin.
