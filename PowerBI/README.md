@@ -1,80 +1,100 @@
-﻿# 📊 Power BI
+# Power BI
 
-Bienvenue dans ma section **Power BI** 👋
+Bienvenue dans ma section **Power BI**.
 
-Cette partie de mon portfolio regroupe mes projets réalisés autour de la **Business Intelligence**, de l'**analyse de données**, de la **visualisation** et du **pilotage décisionnel** avec Power BI.
+Cette partie de mon portfolio regroupe mes travaux réalisés autour de la **Business Intelligence**, de l’**analyse de données**, de la **visualisation** et du **pilotage décisionnel** avec Power BI.
 
-Les projets sont organisés par dossiers afin de séparer clairement les fichiers Power BI, les données utilisées, la documentation et les captures des tableaux de bord.
+Le dossier est organisé par projet afin de séparer clairement les fichiers Power BI, les données, la documentation et les captures des tableaux de bord.
 
-<!-- AUTO_PROJECTS_START -->
+## 📂 Structure du dossier
 
-## 📁 [analyse coupe du monde fifa 2026](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/analyse-coupe-du-monde-fifa-2026)
-
-## 📁 [analyse performance football europe](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/analyse-performance-football-europe)
-
-## 📁 [analyse performance olist](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/analyse-performance-olist)
-
-## 📁 [analyse pitchside pro revenue](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/analyse-pitchside-pro-revenue)
-
-## 📁 [analyse retail star schema](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/analyse-retail-star-schema)
-
-## 📁 [assurance automobile dashboard](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/assurance-automobile-dashboard)
-
-## 📁 [gap service](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/gap-service)
-
-## 📁 [pilotage reseau distribution multimagasins](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/pilotage-reseau-distribution-multimagasins)
-
-## 📁 [pilotage risque credit bancaire](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/pilotage-risque-credit-bancaire)
-
-## 📁 [Soins de santé](https://github.com/fbomisso/fabrice.bomisso/tree/main/PowerBI/Soins de santé)
-
-<!-- AUTO_PROJECTS_END -->
-
-## 📂 Organisation des projets
-
-Chaque projet Power BI suit autant que possible une structure commune :
-
-```
+```text
 PowerBI/
 │
 ├── nom-du-projet/
 │   ├── nom-du-projet.pbix
 │   ├── README.md
-│   ├── data/
+│   ├── Data/
 │   ├── documentation/
 │   └── screenshots/
 │
 ├── autre-projet/
 │   ├── autre-projet.pbix
 │   ├── README.md
-│   ├── data/
+│   ├── Data/
 │   ├── documentation/
 │   └── screenshots/
 │
-└── _template/
-    └── README.md
+└── README.md
 ```
 
-### 📁 `data/`
+Chaque sous-dossier correspond à un **projet Power BI indépendant**.
 
-Contient les données sources utilisées pour les analyses et les modèles Power BI.
+## 📁 Organisation d’un projet
+
+### 📄 Fichier `.pbix`
+
+Le fichier Power BI principal contient notamment :
+
+* le modèle de données ;
+* les transformations réalisées avec Power Query ;
+* les mesures et calculs DAX ;
+* les relations entre les tables ;
+* les visualisations et tableaux de bord.
+
+### 📁 `Data/`
+
+Contient les données utilisées dans le projet.
+
+Selon les besoins du projet, ce dossier peut contenir :
+
+* fichiers CSV ;
+* fichiers Excel ;
+* fichiers issus de bases de données ;
+* données préparées ou transformées ;
+* modèles de données destinés à la création du schéma en étoile.
 
 ### 📁 `documentation/`
 
-Contient la documentation associée aux projets : cahier des charges, méthodologie, documentation technique et autres ressources.
+Contient les ressources permettant de documenter le projet :
+
+* méthodologie ;
+* cahier des charges ;
+* documentation technique ;
+* dictionnaire de données ;
+* notes d’analyse ;
+* autres documents utiles au projet.
 
 ### 📁 `screenshots/`
 
-Contient les captures des différentes pages des tableaux de bord.
+Contient les captures des différentes pages du tableau de bord Power BI.
+
+Ces captures permettent de présenter rapidement les analyses et les visualisations réalisées dans le projet.
 
 ### 📄 `README.md`
 
-Présente le contexte, les objectifs, les données, la méthodologie et les principaux résultats de chaque projet.
+Chaque projet dispose de son propre README présentant notamment :
 
-### 📄 `.pbix`
+* le contexte et la problématique ;
+* les objectifs ;
+* les données utilisées ;
+* la préparation des données ;
+* la modélisation ;
+* les analyses réalisées ;
+* les indicateurs clés ;
+* les principaux résultats ;
+* les technologies utilisées.
 
-Fichier principal du projet Power BI contenant le modèle de données, les transformations Power Query, les mesures DAX et les visualisations.
+## 🧩 Convention d’organisation
+
+Les projets sont conservés dans des sous-dossiers distincts afin de maintenir une organisation claire du repository.
+
+La structure peut varier légèrement d’un projet à l’autre selon les données et les besoins du projet, mais l’objectif reste de conserver une séparation claire entre :
+
+**Projet Power BI → Données → Documentation → Captures → README**
+
+Cette organisation facilite la maintenance du repository, la consultation des projets et leur présentation dans le portfolio.
 
 ---
 
-**Retour au portfolio :** [fabrice.bomisso](https://fbomisso.github.io/fabrice.bomisso/)
+**Retour au portfolio :** [Fabrice BOMISSO](https://fabrice-bomisso-theta.vercel.app/)
