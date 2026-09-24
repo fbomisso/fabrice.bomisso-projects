@@ -1,4 +1,4 @@
-# 📊 Data Projects
+# Data Projects
 
 [Portfolio](https://fabrice-bomisso-theta.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/fabrice-bomisso/)
 
