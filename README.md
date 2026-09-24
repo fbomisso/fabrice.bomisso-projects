@@ -1,6 +1,6 @@
-# Data Projects
+# 📊 Data Projects
 
-**Portfolio** : [fabrice-bomisso-theta.vercel.app](https://fabrice-bomisso-theta.vercel.app/) | **LinkedIn** : [fabrice-bomisso](https://www.linkedin.com/in/fabrice-bomisso/)
+[Portfolio](https://fabrice-bomisso-theta.vercel.app/) | [LinkedIn](https://www.linkedin.com/in/fabrice-bomisso/)
 
 Repository regroupant mes travaux et projets dans différents domaines de la Data.
 
